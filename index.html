@@ -6,59 +6,55 @@
 
   <title>Word Guessing Game</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   
-	<!-- Linking my CSS -->
+  <!-- Linking my CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
 	<!-- Linking jQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   
-	<!-- Linking Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Yellowtail' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+  
+  <div class="container">
+  
+      <div class="display" id="gameName-txt">Word Guessing Game</div>
 
-  <!-- div for everything EXCEPT the footer for the sticky footer -->
-  <div class="content">
+      <div class="scoreboard" id="theScore">
+        <div class="scoreboard-element" id="gameCounter-txt">Round : <div id="A"></div></div>
+        <div class="scoreboard-element" id="guessCounter-txt">Wrong: <div id="B"></div></div>
+        <div class="scoreboard-element" id="userMessage1-txt">check</div>
+        <div class="scoreboard-element" id="userMessage2-txt">check</div>
+      </div>
 
-      <header id="basic-portfolio-header">
-          <nav id="basic-portfolio-header-nav">
-    
-              <div id="my-name">
-                <h1>Word Guessing Game</h1>
-              </div>
-              
-              <ul class="header-links">
-                <li><a class="nav-bar-link" href="#">Word Guessing Game</a></li>
-                <li><a class="nav-bar-link" href="#">Psycho</a></li>
-              </ul>
-        
-          </nav> 
-        </header>
+      <div id="theEndOfGame">
+          <img id="animated-gif" height="300" width="100%">
+      </div>
+      
+      <div id="thePuzzle">
+          <br><br>
+          <div id="category-txt"></div>
+          <h2 class="puzzleDisplay" id="puzzleDisplay-txt" ></h2>
+      </div>
 
-      <section id="meat-n-potatoes">
-        <div>k
-            <h2 id="tbd-text">Ready to Play?</h2>
-            <h2 id="directions-text">I'm thinking of a letter of the alphabet, what do you think it is?</h2>
-            <h3 id="userChoice-text"></h3>
-            <h3 id="isWinner-text"></h3>
-            <h3 id="guessesSoFar-text"></h3>
-            <h3 id="guessesCount-text"></h3>
-            <!-- <h3 id="losses-text"></h3> -->
-            <!-- <h3 id="ties-text"></h3> -->
-        </div>
-      </section>
+      <!-- Welcome to the game; used only at game startup -->
+      <div id="theWelcome">
+        <div class="info">Welcome to Jan's Homework #3</div>
+        <div class="info">5 Rounds are available</div>
+        <div class="info">7 Wrong Guesses Per Round -> You Lose</div>
+        <div class="info">The Audience is Ready!</div>
+        <div class="info">Hit Any Key to Begin</div>
+      </div>
 
   </div>
 
   <script type="text/javascript" src="assets/javascript/game.js"></script>
-
-  <footer id="portfolio-footer">
-      <p>&#9400;2019 Double Black Diamond Consulting</p>
-  </footer>
 
 </body>
 

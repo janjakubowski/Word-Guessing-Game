@@ -13,7 +13,7 @@ body, html {
 }
 
 body {
-  background-image: url(http://unsplash.it/1500/1000?image=881&blur=50);
+  background: url(../images/audience.jpg);
 }
 
 .content {
@@ -21,175 +21,96 @@ body {
   /* 100vh is 100% of screen */
 }
 
-p {
-  font-size: 20px;
-}
-
-nav {
-  max-width: 960px;
-  margin: 0 auto 0 auto;
-  /* display: flex; */
-  /* justify-content: space-between; */
-}
-
-#my-portfolio-header {
-  border-bottom: 4px solid #4aaaa5;
-  margin: 0;
-  padding: 0;
-  background-color:#ccc;
-}
-
-#myLinks {
-  background-color: #ccc;
-  color: darkslateblue !important;
-}
-
-#my-portfolio-nav {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.navbar-toggler {
-  background-color: darkslateblue;
-  margin: 0 20px 0 0;
-}
-
-.navbar-toggler-icon {
-  background-color: #ccc;
-}
-
-.nav-link {
-  color: darkslateblue;
-}
-
-#meat-n-potatoes {
-  max-width: 960px;
-  margin: 8px auto 8px auto;
-  padding: 0 0;
-  background-color: #ccc;
-}
-
-#portfolio-footer {
-  border-top: 4px solid #4aaaa5;
-  width: 100%;
-  /* height: 18px; */
-  background-color: darkslateblue;
-  color: #eee;
-}
-
-/* Put the text of the footer in the center */
-footer p {
-  font-size: 10px;
+body, input  {
   text-align: center;
-  height: 15px;
 }
 
-/* use inside a meat-n-potatoes section */
-#request-contact-form {
-  /* display: flex; */
-  /* flex-direction: column; */
-  display: block;
-  margin: 0 0;
-  padding: 20px 20px;
+.button {
+  font-size: 66px;
 }
 
-#portfolio-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+#round, #message {
+  font-size: 52px;
 }
 
-.one-line-input {
-  width: 90%;
-}
-
-.gt1-line-input {
-  width: 90%;
-  height: 120px;
-}
-
-.form-submit {
-  background-color: darkslateblue;
-  color: #ccc
-}
-
-#my-name {
-  float: left;
-  margin: 0 0;
-  padding: 0 12px;
+.info {
   font-size: 32px;
-  font-weight: bold;
-  background-color: darkslateblue;
-  color: #ccc;
 }
 
-.my-header-links {
-  align-items: center;
+.row {
+  background-color: darkgreen;
+  font-size: 80px;
 }
 
-.nav-bar-link {
-  display: block;
-  margin: 0 10px;
-  padding: 0 10px; /* this leaves the white space between link clickable */
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: darkslateblue;
+.container {
+  background-image: url(../images/pool-table.png);
+  background-color: #ccc;
+  min-height: 65vh;
+  width: 75%;
+  padding: 0 auto 75px auto;
 }
 
-a:hover {
-  background-color: darkslateblue;
-  color: #ccc !important;
-}
 
-.btn:hover {
-  background-color: #eee;
-  color: blue;
-  }
 
-.page-title {
-  margin: 0;
-  padding: 20px 10px 5px 20px;
+.display, .scoreboard-element {
   font-size: 28px;
+  padding: 4px 0;
+  border: 4px solid #2759B2;
+  border-bottom: none;
+}
+
+#theWelcome {
+  font-size: 28px;
+  padding: 4px 0;
+  border: 4px solid #2759B2;
+}
+
+.info {
+  margin: 5px auto;
+}
+
+
+#gameName-txt, #gameCounter-txt, #guessCounter-txt, #userMessage1-txt, #userMessage2-txt,  #theWelcome {
   font-weight: bold;
-  color: darkslateblue;
-  border-bottom: 2px solid darkslateblue;
+  color: #2746B3;
+  background-color: #FFD76A;
 }
 
-#about-me {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 20px;
+#gameName-txt {
+  font-family: 'Comic Sans', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  font-size: 50px;
 }
 
-.carousel-item {
-  min-height: 350px;
+
+#gameCounter-txt, #guessCounter-txt {
+  display: inline-block;
+  width: 49.5%;
+  font-size: 32px;
 }
 
-.portfolio-card {
-  width: 250px;
-  min-height: 450px;
-  background-color: darkslateblue;
+#category-txt {
+  background-color: #2746B3;
   color: #ccc;
-  margin: 20px auto;
-  padding: 10px 10px;
-  border-width: 5px;
-  border-color: #000;
-}
-
-.portfolio-card-title {
-  margin: 10px auto;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 50px auto;
   text-align: center;
+  margin: 20px auto 0 auto;
 }
 
-.portfolio-card-text {
-  padding: 0 5px;
-  font-size: 12px;
+.puzzleDisplay {
+  padding: 20px; 
+  font-size: 40px;
+  text-align: center;
+  border:10px; 
+  border-style:solid; 
+  border-color:#2746B3;
+  background-color: #ccc; 
+  padding: 1em;
 }
+
 
 /* END OF FILE */
