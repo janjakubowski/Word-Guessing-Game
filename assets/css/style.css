@@ -46,15 +46,18 @@ body, input  {
   background-image: url(../images/pool-table.png);
   background-color: #ccc;
   min-height: 65vh;
-  width: 75%;
+  /* width: 75%; */
   padding: 0 auto 75px auto;
 }
 
-
+.row {
+  padding: 0 15px;
+}
 
 .display, .scoreboard-element {
   font-size: 28px;
-  padding: 4px 0;
+  font-family: "Impact", "Comic Sans MS", "Comic Sans", cursive;
+  /* padding: 4px 0; */
   border: 4px solid #2759B2;
   border-bottom: none;
 }
@@ -62,6 +65,7 @@ body, input  {
 #theWelcome {
   font-size: 28px;
   padding: 4px 0;
+  line-height: 1.5;
   border: 4px solid #2759B2;
 }
 
@@ -74,6 +78,7 @@ body, input  {
   font-weight: bold;
   color: #2746B3;
   background-color: #FFD76A;
+  line-height: 1.5;
 }
 
 #gameName-txt {
@@ -85,9 +90,10 @@ body, input  {
 
 
 #gameCounter-txt, #guessCounter-txt {
-  display: inline-block;
-  width: 49.5%;
+  /* display: inline-block; */
+  /* width: 49.5%; */
   font-size: 32px;
+  /* line-height: 1.5; */
 }
 
 #category-txt {
@@ -102,7 +108,7 @@ body, input  {
 }
 
 .puzzleDisplay {
-  padding: 20px; 
+  /* padding: 20px;  */
   font-size: 40px;
   text-align: center;
   border:10px; 
